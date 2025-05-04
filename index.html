@@ -58,7 +58,7 @@
                 <img src="https://i.pinimg.com/originals/33/42/4a/33424a7524f89550e33710c47bc8a2cb.gif" alt="">
             </div>
             <button id="no">No</button>
-            <a href="https://youtu.be/d7FxPY2QCL4?si=d7lLn90XBnIjOwju"><button id="yes">Yes</button></a>
+            <a href="https://youtu.be/xaOtiz1K9-w?si=AwSlyVy8Z2dT_G9t"><button id="yes">Yes</button></a>
         </div>
     </div>
 </body>
@@ -68,7 +68,7 @@
     const container = document.querySelector('.container');
 
     btnNo.onclick = () => {
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 10; i++) {
             const x = window.innerWidth;
             const y = window.innerHeight;
             const randomX = Math.floor(Math.random() * (x - 100));
@@ -85,6 +85,11 @@
             container.appendChild(btnyes); 
 
             const yes = document.querySelectorAll("#yes")
+            yes.forEach(button => {
+                button.onclick = () =>{
+                    window.open("https://youtu.be/xaOtiz1K9-w?si=AwSlyVy8Z2dT_G9t","_self")
+                }
+            })
         }
     };
 
